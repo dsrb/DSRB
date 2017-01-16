@@ -38,6 +38,7 @@ defaults:
     status: 
     layout: post
     work_images: 
+    -
 - scope:
     path: ''
     type: testimonials
@@ -49,12 +50,14 @@ defaults:
   values:
     permalink: "/sliders/:title/"
     slider_images: 
+    -
 - scope:
     path: ''
     type: brand
   values:
     permalink: "/brand/:title/"
-    brand_colour: 
+    brand_colours:
+    -
     logo_image: 
 email: dan@dsrb.com.au
 mobile: "+61 418 852 804"

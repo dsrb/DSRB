@@ -1,12 +1,67 @@
-name: name
-title: title
-baseurl: baseurl
-description: description
+title: DSR BRANDING
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: false
+  work:
+    title: Work
+    output: true
+    permalink: work
+  testimonials:
+    title: Testimonials
+    output: true
+    permalink: testimonials
+  sliders:
+    title: Sliders
+    output: true
+    permalink: sliders  
+  brand:
+    title: brand
+    output: true
+    permalink: brand
+defaults:
+- scope:
+    path: ''
+  values:
+    layout: default
+- scope:
+    path: ''
+    type: work
+  values:
+    permalink: "/work/:title/"
+    link: 
+    status: 
+    layout: post
+    work_images:
+- scope:
+    path: ''
+    type: testimonials
+  values:
+    permalink: "/testimonials/:title/"
+- scope:
+    path: ''
+    type: sliders
+  values:
+    permalink: "/sliders/:title/"
+    slider_images:
+- scope:
+    path: ''
+    type: brand
+  values:
+    permalink: "/brand/:title/"
+    brand_colour:
+    logo_image:
+email: dan@dsrb.com.au
+mobile: "+61 418 852 804"
+baseurl: http://dsrb.siteleaf.net/
+description: Branding Agency
 permalink: pretty
-
 markdown: redcarpet
 highlighter: pygments
-
 exclude:
 - gulpfile.js
 - package.json

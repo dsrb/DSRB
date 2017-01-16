@@ -1,0 +1,15 @@
+name: name
+title: title
+baseurl: baseurl
+description: description
+permalink: pretty
+
+markdown: redcarpet
+highlighter: pygments
+
+exclude:
+- gulpfile.js
+- package.json
+- README*
+- node_modules
+- ".gitignore"

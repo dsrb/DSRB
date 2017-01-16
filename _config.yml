@@ -35,7 +35,6 @@ defaults:
   values:
     permalink: "/work/:title/"
     link: 
-    status: 
     layout: post
     work_images: 
     -

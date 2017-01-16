@@ -20,7 +20,7 @@ collections:
     output: true
     permalink: sliders  
   brand:
-    title: brand
+    title: Brand
     output: true
     permalink: brand
 defaults:

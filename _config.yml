@@ -71,8 +71,8 @@ address-line-1: Level 1 443
 address-line-2: Spring Hill QLD 4000
 address-line-3: Upper Edward St
 google-address: https://goo.gl/maps/R86aAVX13Kt
-google-latitude:
-google-longitude:
+google-latitude: 
+google-longitude: 
 permalink: pretty
 markdown: redcarpet
 highlighter: pygments

@@ -21,12 +21,12 @@
                     <h3>Contact</h3>
                     <ul>
                         {% assign sorted_pages = site.pages | sort:"position" %}
-                        {% for work in sorted_pages %}
-                        {% if page.menu == "main" %}
-                            <li>
-                                <a href="{{ page.url }}">{{ page.title }}</a>
-                            </li>
-                        {% endif %}
+                        {% for page in sorted_pages %}
+                            {% if page.menu == 'main' %}
+                                <li>
+                                    <a href="{{ page.url }}">{{ page.title }}</a>
+                                </li>
+                            {% endif %}
                         {% endfor %}
                     </ul>
                 </div>

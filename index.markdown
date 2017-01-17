@@ -1,6 +1,6 @@
 ---
 title: Home
-position: 2
+position: 0
 menu: main
 layout: home
 ---

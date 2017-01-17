@@ -1,5 +1,5 @@
 ---
-title: DSR BRANDING
+title: DSR Branding
 timezone: UTC
 collections:
   brand:
@@ -31,6 +31,11 @@ defaults:
     layout: default
 - scope:
     path: ''
+    type: pages
+  values:
+    menu: menu
+- scope:
+    path: ''
     type: work
   values:
     permalink: "/work/:title/"
@@ -59,9 +64,15 @@ defaults:
     - 
     logo_image: 
 email: dan@dsrb.com.au
-mobile: "+61 418 852 804"
+mobile: 0401 969 669
 baseurl: http://dsrb.siteleaf.net/
 description: Branding Agency
+address-line-1: Level 1 443
+address-line-2: Spring Hill QLD 4000
+address-line-3: Upper Edward St
+google-address: https://goo.gl/maps/R86aAVX13Kt
+google-latitude:
+google-longitude:
 permalink: pretty
 markdown: redcarpet
 highlighter: pygments

@@ -38,8 +38,8 @@ defaults:
     link: 
     layout: post
     work_images:
-    -
-    work_testimonials:
+    - 
+    work_testimonials: 
 - scope:
     path: ''
     type: testimonials
@@ -51,7 +51,7 @@ defaults:
   values:
     permalink: "/sliders/:title/"
     slider_images:
-    -
+    - 
 - scope:
     path: ''
     type: brand

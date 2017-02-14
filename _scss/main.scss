@@ -4,7 +4,7 @@
 
 $grey: #888;
 
-// Layout
+/* Base */
 
 body {
     font-family:'DINPro-Light', sans-serif;
@@ -14,41 +14,38 @@ h1, h2, h3, h4, h5 {
     font-weight: normal;
 }
 
-// Header //
+img {
+    width: 100%;
+}
+
+/* Header */
 
 .header {
-    max-width: 1200px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    max-width: 80em;
     width: 100%;
     padding: 0.7em;
     margin: 0 auto;
     background-color: $grey;
-    text-align: center;
 }
 
-.header-icon {
-    max-width: 25px;
-    width: 100%;
-    display: inline-block;
-    float: left;
-}
 
 .header-text {
     max-width: 200px;
     width: 100%;
-    display: inline-block;
 }
 
-.clearfix {
-    clear: both;
-}
-
-// Footer //
+/* Footer */
 
 .footer {
-    max-width: 1200px;
+    max-width: 80em;
     width: 100%;
     padding: 0.7em;
     margin: 0 auto;
+    overflow: auto;
 
     ul {
         margin: 0;
@@ -89,19 +86,28 @@ h1, h2, h3, h4, h5 {
     font-size: 0.7em;
 }
 
-.content-main {
-    width: 1200px;
+.content-container {
+    max-width: 80em;
     margin: 0 auto;
 }
 
-// Other //
+.content-main {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Other */
+
+.clearfix {
+    clear: both;
+}
 
 .no-spacing {
     margin: 0 !important;
     padding: 0 !important;
 }
 
-// Columns // 
+/* Columns */
 
 * {
     -webkit-box-sizing: border-box;
@@ -135,7 +141,7 @@ h1, h2, h3, h4, h5 {
 
 .col-20, .col-25, .col-50, .col-60, .col-75, .col-100 {
     float: left;
-    padding: 0;
+    padding: 0 1em;
 }
 
 .col-20 {

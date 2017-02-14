@@ -9,10 +9,20 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <link rel="stylesheet" href="/styles/main.css">
     </head>
-    <body class="content-container">
 
     <header class="header">
         <img class="header-icon" src="/assets/icon.svg">
         <img class="header-text" src="/assets/text.svg">
-        <div class="clearfix"></div>
+        <ul class="header-menu">
+            {% assign sorted_pages = site.pages | sort:"position" %}
+            {% for page in sorted_pages %}
+                {% if page.menu == 'main' %}
+                    <li class="header-menu-item">
+                        <a href="{{ page.url }}">{{ page.title }}</a>
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
     </header>
+
+    <body class="content-container">

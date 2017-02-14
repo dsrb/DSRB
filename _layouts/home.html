@@ -3,10 +3,32 @@ title: Home
 layout: default
 ---
 
-    {% assign sorted_work = site.work | sort:"position" %}
-    {% for work in sorted_work %}
-        <li>
-            <a href="{{ work.url }}">{{ work.title }}</a>
-            {{ work.content | strip_html | truncatewords: 20 }}
-        </li>
-    {% endfor %}
+    <div class="content-work">
+        {% assign sorted_work = site.work | sort:"position" %}
+        {% for work in sorted_work %}
+            <div class="col-50">
+                <h1>Selected Work</h1>
+                <a href="{{ work.url }}">
+                    <img src="http://placehold.it/1920x1280">     
+                    <h2>{{ work.title }}</h2>
+                    <p>{{ work.content | strip_html | truncatewords: 20 }}</p>
+                </a>
+            </div>   
+            <div class="clearfix"></div>
+        {% endfor %}
+    </div>
+
+    <div class="content-work">
+        {% assign sorted_work = site.work | sort:"position" %}
+        {% for work in sorted_work %}
+            <div class="col-50">
+                <h1>Selected Clients</h1>
+                <a href="{{ work.url }}">
+                    <img src="http://placehold.it/1920x1280">     
+                    <h2>{{ work.title }}</h2>
+                    <p>{{ work.content | strip_html | truncatewords: 20 }}</p>
+                </a>
+            </div>   
+            <div class="clearfix"></div>
+        {% endfor %}
+    </div>

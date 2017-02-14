@@ -13,10 +13,6 @@ collections:
     title: Sliders
     output: true
     permalink: sliders
-  testimonials:
-    title: Testimonials
-    output: true
-    permalink: testimonials
   uploads:
     title: Uploads
     output: false
@@ -42,7 +38,8 @@ defaults:
     link: 
     layout: post
     work_images:
-    - 
+    -
+    work_testimonials:
 - scope:
     path: ''
     type: testimonials
@@ -54,7 +51,7 @@ defaults:
   values:
     permalink: "/sliders/:title/"
     slider_images:
-    - 
+    -
 - scope:
     path: ''
     type: brand

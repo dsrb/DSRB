@@ -5,3 +5,4 @@ position: 3
 menu: main
 ---
 
+This is our team page below will be blurbs about each team member profile.

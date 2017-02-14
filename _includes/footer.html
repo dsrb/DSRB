@@ -2,28 +2,28 @@
         <footer class="footer">
             <div class="row">
                 <div class="col-25">
-                    <h3>Contact</h3>
-                    <ul>
-                        <li><a href="{{ site.baseurl }}">{{ site.title }}</a></li>
-                        <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-                        <li><a href="tel:+{{ site.mobile }}">{{ site.mobile }}</a></li>
+                    <h3 class="content-h3">Contact</h3>
+                    <ul class="footer-list">
+                        <li class="footer-list-item"><a href="{{ site.baseurl }}">{{ site.title }}</a></li>
+                        <li class="footer-list-item"><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+                        <li class="footer-list-item"><a href="tel:+{{ site.mobile }}">{{ site.mobile }}</a></li>
                     </ul>
                 </div>
                 <div class="col-25">
-                    <h3>Contact</h3>
-                    <ul>
-                        <li><a href="{{ site.google-address }}">{{ site.address-line-1 }}</li>
-                        <li>{{ site.address-line-2 }}</li>
-                        <li>{{ site.address-line-3 }}</a></li>
+                    <h3 class="content-h3">Contact</h3>
+                    <ul class="footer-list">
+                        <li class="footer-list-item"><a href="{{ site.google-address }}">{{ site.address-line-1 }}</li>
+                        <li class="footer-list-item">{{ site.address-line-2 }}</li>
+                        <li class="footer-list-item">{{ site.address-line-3 }}</a></li>
                     </ul>
                 </div>
                 <div class="col-25">
-                    <h3>Contact</h3>
-                    <ul>
+                    <h3 class="content-h3">Contact</h3>
+                    <ul class="footer-list">
                         {% assign sorted_pages = site.pages | sort:"position" %}
                         {% for page in sorted_pages %}
                             {% if page.menu == 'main' %}
-                                <li>
+                                <li class="footer-list-item">
                                     <a href="{{ page.url }}">{{ page.title }}</a>
                                 </li>
                             {% endif %}
@@ -31,12 +31,12 @@
                     </ul>
                 </div>
                 <div class="col-25">
-                    <h3>Newsletter</h3>
+                    <h3 class="content-h3">Newsletter</h3>
                         <form action="http://dsrbranding.createsend.com/t/i/s/krsjd/" method="post" id="subForm">
-                            <label for="fieldName">Name</label>
-                            <input placeholder="Enter your name" id="fieldName" name="cm-name" type="text">
-                            <label for="fieldEmail">Email*</label>
-                            <input placeholder="Enter your email" id="fieldEmail" name="cm-krsjd-krsjd" type="email" required>
+                            <label class="footer-label" for="fieldName">Name</label>
+                            <input class="footer-input" placeholder="Enter your name" id="fieldName" name="cm-name" type="text">
+                            <label class="footer-label" for="fieldEmail">Email*</label>
+                            <input class="footer-input" placeholder="Enter your email" id="fieldEmail" name="cm-krsjd-krsjd" type="email" required>
                             <button type="submit">Subscribe</button>
                         </form>
                 </div>

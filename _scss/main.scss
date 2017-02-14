@@ -17,8 +17,10 @@ h1, h2, h3, h4, h5 {
 // Header //
 
 .header {
+    max-width: 1200px;
     width: 100%;
     padding: 0.7em;
+    margin: 0 auto;
     background-color: $grey;
     text-align: center;
 }
@@ -43,8 +45,10 @@ h1, h2, h3, h4, h5 {
 // Footer //
 
 .footer {
+    max-width: 1200px;
     width: 100%;
     padding: 0.7em;
+    margin: 0 auto;
 
     ul {
         margin: 0;
@@ -55,16 +59,39 @@ h1, h2, h3, h4, h5 {
         list-style: none;
     }
 
-    label {
-        display: block;
-        padding: 0.2em;
-    }
-
     input {
         display: block;
         width: 100%;
     }
 
+}
+
+.footer-list {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-list-item {
+    padding: 0 0 0.1em 0;
+}
+
+.footer-label {
+    display: block;
+    padding: 0 0 0.6em 0;
+    font-size: 0.7em;
+}
+
+.footer-input {
+    display: block;
+    width: 100%;
+    padding: 0.5em;
+    margin: 0 0 1em 0;
+    font-size: 0.7em;
+}
+
+.content-main {
+    width: 1200px;
+    margin: 0 auto;
 }
 
 // Other //

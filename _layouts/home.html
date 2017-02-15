@@ -19,14 +19,13 @@ layout: default
     </div>
 
     <div class="content-work">
-        {% assign sorted_work = site.work | sort:"position" %}
-        {% for work in sorted_work %}
+        {% assign sorted_brand = site.brand | sort:"position" %}
+        {% for brand in sorted_brand %}
             <div class="col-50">
                 <h1>Selected Clients</h1>
-                <a href="{{ work.url }}">
+                <a href="{{ brand.url }}">
                     <img src="http://placehold.it/1920x1280">     
-                    <h2>{{ work.title }}</h2>
-                    <p>{{ work.content | strip_html | truncatewords: 20 }}</p>
+                    <h2>{{ brand.title }}</h2>
                 </a>
             </div>   
             <div class="clearfix"></div>

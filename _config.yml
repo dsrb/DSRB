@@ -2,24 +2,24 @@
 title: DSR Branding
 timezone: UTC
 collections:
-  brand:
-    title: Brand
-    output: true
-    permalink: brand
-  posts:
-    title: Posts
-    output: true
-  sliders:
-    title: Sliders
-    output: true
-    permalink: sliders
-  uploads:
-    title: Uploads
-    output: false
   work:
     title: Work
     output: true
     permalink: work
+  clients:
+    title: Clients
+    output: true
+    permalink: clients
+  sliders:
+    title: Sliders
+    output: true
+    permalink: sliders
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: false
 defaults:
 - scope:
     path: ''
@@ -37,6 +37,7 @@ defaults:
     permalink: "/work/:title/"
     link: 
     layout: post
+    work_website:
     work_images:
     - 
     work_testimonials: 
@@ -54,12 +55,13 @@ defaults:
     - 
 - scope:
     path: ''
-    type: brand
+    type: clients
   values:
-    permalink: "/brand/:title/"
-    brand_colours:
+    permalink: "/client/:title/"
+    client_website:
+    client_colours:
     - 
-    logo_image: 
+    client_logo_image: 
 email: dan@dsrb.com.au
 mobile: 0401 969 669
 baseurl: http://dsrb.siteleaf.net/

@@ -16,4 +16,4 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac diam sit 
 HEX: #123456
 PANTONE: 521C
 CMYK: 0, 2, 4, 6
-RGB: 
+RGB: 0, 0, 0

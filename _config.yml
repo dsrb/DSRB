@@ -47,11 +47,6 @@ defaults:
     work_testimonials: 
 - scope:
     path: ''
-    type: testimonials
-  values:
-    permalink: "/testimonials/:title/"
-- scope:
-    path: ''
     type: sliders
   values:
     permalink: "/sliders/:title/"

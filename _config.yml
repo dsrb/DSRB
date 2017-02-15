@@ -2,24 +2,24 @@
 title: DSR Branding
 timezone: UTC
 collections:
-  work:
-    title: Work
-    output: true
-    permalink: work
   clients:
     title: Clients
     output: true
     permalink: clients
+  posts:
+    title: Posts
+    output: true
   sliders:
     title: Sliders
     output: true
     permalink: sliders
-  posts:
-    title: Posts
-    output: true
   uploads:
     title: Uploads
     output: false
+  work:
+    title: Work
+    output: true
+    permalink: work
 defaults:
 - scope:
     path: ''
@@ -37,7 +37,7 @@ defaults:
     permalink: "/work/:title/"
     link: 
     layout: post
-    work_website:
+    work_website: 
     work_images:
     - 
     work_testimonials: 
@@ -58,7 +58,7 @@ defaults:
     type: clients
   values:
     permalink: "/client/:title/"
-    client_website:
+    client_website: 
     client_colours:
     - 
     client_logo_image: 
